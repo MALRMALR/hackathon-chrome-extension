@@ -2,5 +2,33 @@
  * Place your custom CSS styles here.
  **/
 h1 {
-  color: green;
+  /* color: #00feca; */
+  color: #C1E069;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  width: 50%;
+  margin: 100px auto auto auto;
+  letter-spacing: 5px;
+}
+
+body {
+  background-color: #0D5C70;
+}
+
+#container, h1, #progress-percentage, #graduation, #motivation {
+  width: 50%;
+  margin: 100px auto auto auto;
+}
+
+#progress-percentage, #graduation, #motivation {
+  font-size: 24px;
+  color: rgb(255, 255, 255); 
+  margin-top: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#progress-percentage {
+  text-align: left;
 }

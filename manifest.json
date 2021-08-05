@@ -1,9 +1,8 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "Codesmith Progress Bar",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "description": "This extension shows progress bar for Codesmith residents.",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -14,8 +13,9 @@
     "page": "src/bg/background.html",
     "persistent": true
   },
+  "content_security_policy": "script-src 'self'; object-src 'self'",
   "chrome_url_overrides": {
-    "newtab": "src/override/override.html"
+    "newtab": "src/bg/background.html"
   },
   "permissions": [
     "tabs"
@@ -35,6 +35,22 @@
       ],
       "js": [
         "src/inject/inject.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.google.com/*"
+      ],
+      "js": [
+        "src/bg/background.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://www.google.com/*"
+      ],
+      "js": [
+        "src/inject/progressbar.js"
       ]
     }
   ]
