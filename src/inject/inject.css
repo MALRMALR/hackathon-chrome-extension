@@ -12,7 +12,7 @@ h1 {
 }
 
 body {
-  background-color: #0D5C70;
+  background-color: rgb(17, 44, 73);
 }
 
 #container, h1, #progress-percentage, #graduation, #motivation {
